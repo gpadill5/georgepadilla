@@ -28,7 +28,7 @@ if [ "$HUGO_OS" = "darwin" ]; then
     exit 1
   fi
   hugo version
-  hugo --gc --minify
+  hugo --gc --minify --ignoreCache
   exit 0
 fi
 
@@ -52,4 +52,4 @@ if [ ! -x "$HUGO_DIR/hugo" ]; then
 fi
 
 "$HUGO_DIR/hugo" version
-"$HUGO_DIR/hugo" --gc --minify
+"$HUGO_DIR/hugo" --gc --minify --ignoreCache
