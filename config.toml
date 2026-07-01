@@ -1,0 +1,102 @@
+baseURL = "/"
+theme = "hugo-apero"
+locale = "en-us"
+title = "George Padilla"
+author = "George Padilla"
+copyright = "&copy; 2026 George Padilla"
+googleAnalytics = ""
+metaDataFormat = "yaml"
+footnoteReturnLinkContents = "&#8617;"
+disableKinds = ["taxonomy", "term"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+enableEmoji = true
+
+[pagination]
+  pagerSize = 6
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark.renderer]
+    unsafe = true
+    hardwraps = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+  [markup.highlight]
+    style = "github"
+
+[params]
+  orgName = "Computational Materials Science"
+  orgLocal = "New York / Ithaca"
+  description = "Computational materials scientist building machine-learning pipelines for molecular simulation, crystal-structure classification, and scientific data."
+  favicon = "/img/favicon.ico"
+  logo = "/img/star-home.png"
+  mainSections = ["project", "blog"]
+  navallcaps = true
+  socialInHeader = false
+  socialInFooter = true
+  sharing_image = "/img/research-hero.jpg"
+  twitter = ""
+  theme = "sky"
+  custom_theme = ""
+  customtextFontFamily = "Commissioner"
+  customheadingFontFamily = "Fraunces"
+  textFontFamily = "sans-serif"
+  headingFontFamily = "sans-serif"
+  comments = ""
+
+  [params.math]
+    renderer = "katex"
+
+  [[params.social]]
+    icon = "github"
+    icon_pack = "fab"
+    url = "https://github.com/gpadill5"
+  [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fab"
+    url = "https://www.linkedin.com/in/george-padilla-a500b921b/"
+  [[params.social]]
+    icon = "envelope"
+    icon_pack = "fas"
+    url = "mailto:georgepadilla901@gmail.com"
+
+[menu]
+  [[menu.header]]
+    name = "Projects"
+    title = "Projects"
+    url = "/project/"
+    weight = 1
+  [[menu.header]]
+    name = "CV"
+    title = "CV"
+    url = "/files/George_Padilla_resume.pdf"
+    weight = 2
+  [[menu.header]]
+    name = "Notes"
+    title = "Notes"
+    url = "/blog/"
+    weight = 3
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+    anonymizeIP = true
+    respectDoNotTrack = true
+  [privacy.instagram]
+    disable = true
+    simple = true
+  [privacy.x]
+    disable = true
+    enableDNT = true
+    simple = true
+  [privacy.vimeo]
+    disable = false
+    enableDNT = true
+    simple = true
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
