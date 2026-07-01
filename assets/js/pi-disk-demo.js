@@ -69,26 +69,26 @@
     var diskRadius = (params.d / 2) * scale;
 
     ctx.clearRect(0, 0, size, size);
-    ctx.fillStyle = "#fbfaf6";
+    ctx.fillStyle = "#fbfdff";
     ctx.fillRect(0, 0, size, size);
 
-    ctx.fillStyle = "#f3f0e8";
-    ctx.strokeStyle = "rgba(35, 34, 31, 0.34)";
+    ctx.fillStyle = "#f3f8fc";
+    ctx.strokeStyle = "rgba(44, 58, 68, 0.3)";
     ctx.lineWidth = 1.6;
     ctx.fillRect(pad, pad, params.L * scale, params.L * scale);
     ctx.strokeRect(pad, pad, params.L * scale, params.L * scale);
 
     ctx.beginPath();
     ctx.arc(center, center, result.circleRadius * scale, 0, Math.PI * 2);
-    ctx.fillStyle = "rgba(88, 111, 123, 0.07)";
+    ctx.fillStyle = "rgba(91, 126, 146, 0.06)";
     ctx.fill();
-    ctx.strokeStyle = "#697782";
+    ctx.strokeStyle = "#607786";
     ctx.lineWidth = 2;
     ctx.stroke();
 
     ctx.beginPath();
     ctx.arc(center, center, result.effectiveRadius * scale, 0, Math.PI * 2);
-    ctx.strokeStyle = "rgba(77, 95, 107, 0.36)";
+    ctx.strokeStyle = "rgba(88, 113, 128, 0.34)";
     ctx.lineWidth = 1.4;
     ctx.setLineDash([6, 5]);
     ctx.stroke();
@@ -97,7 +97,7 @@
     result.disks.forEach(function (disk) {
       ctx.beginPath();
       ctx.arc(pad + disk.x * scale, pad + disk.y * scale, Math.max(diskRadius, 1.8), 0, Math.PI * 2);
-      ctx.fillStyle = disk.hit ? "rgba(55, 118, 146, 0.58)" : "rgba(42, 40, 36, 0.2)";
+      ctx.fillStyle = disk.hit ? "rgba(55, 118, 146, 0.58)" : "rgba(43, 54, 61, 0.18)";
       ctx.fill();
     });
   }
@@ -120,10 +120,10 @@
     var py = function (v) { return padT + ph - ((v - lo) / (hi - lo)) * ph; };
 
     ctx.clearRect(0, 0, W, H);
-    ctx.fillStyle = "#fbfaf6";
+    ctx.fillStyle = "#fbfdff";
     ctx.fillRect(0, 0, W, H);
 
-    ctx.strokeStyle = "rgba(35, 34, 31, 0.2)";
+    ctx.strokeStyle = "rgba(44, 58, 68, 0.2)";
     ctx.lineWidth = 1;
     ctx.beginPath();
     ctx.moveTo(padL, padT);
@@ -132,14 +132,14 @@
     ctx.stroke();
 
     var piY = py(Math.PI);
-    ctx.strokeStyle = "rgba(35, 34, 31, 0.42)";
+    ctx.strokeStyle = "rgba(44, 58, 68, 0.42)";
     ctx.setLineDash([5, 4]);
     ctx.beginPath();
     ctx.moveTo(padL, piY);
     ctx.lineTo(padL + pw, piY);
     ctx.stroke();
     ctx.setLineDash([]);
-    ctx.fillStyle = "#23221f";
+    ctx.fillStyle = "#26333a";
     ctx.font = "12px Georgia, serif";
     ctx.textAlign = "right";
     ctx.fillText("π", padL - 5, piY + 4);
@@ -153,7 +153,7 @@
     });
     ctx.stroke();
 
-    ctx.fillStyle = "#5f5b52";
+    ctx.fillStyle = "#52626c";
     ctx.font = "11px Georgia, serif";
     ctx.textAlign = "center";
     ctx.fillText("trial", padL + pw / 2, H - 5);

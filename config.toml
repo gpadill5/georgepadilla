@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://gpadill5.github.io/"
 theme = "hugo-apero"
 locale = "en-us"
 title = "George Padilla"
