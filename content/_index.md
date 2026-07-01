@@ -21,7 +21,7 @@ type: home
 
 - Interested in **scientific machine learning**, molecular simulation, materials informatics, optimization, algorithm development, and computational biology.
 
-[More complete vitae](/files/George_Padilla_resume.pdf).
+[More complete vitae](/files/george_padilla_resume.pdf).
 
 ## Selected projects & notes
 

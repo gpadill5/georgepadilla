@@ -4,7 +4,7 @@ description: "Education, research experience, projects, and skills."
 layout: single
 ---
 
-[Download PDF](/files/George_Padilla_resume.pdf) · [Download DOCX](/files/George_Padilla_CV_A.docx)
+[Download PDF](/files/george_padilla_resume.pdf) · [Download DOCX](/files/george_padilla_cv_a.docx)
 
 ## Education
 
